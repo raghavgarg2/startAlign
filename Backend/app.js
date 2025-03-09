@@ -20,9 +20,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// process.env.USER_NAME;
-const DATABASE_URI =
-  "mongodb+srv://raghavgarg:Kajukatli123@cluster0.xv5gq.mongodb.net/devMatch?retryWrites=true&w=majority&appName=Cluster0";
+const DATABASE_URI = process.env.MONGO_URI;
 
 mongoose
   .connect(DATABASE_URI)
