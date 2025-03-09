@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const url = "http://localhost:7770/tasks";
+  const url = "https://startalign-3.onrender.com/tasks";
 
   useEffect(() => {
     const fetchTasks = async () => {

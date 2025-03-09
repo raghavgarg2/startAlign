@@ -22,7 +22,7 @@ const FileUpload = () => {
 
     try {
       const uploadResponse = await axios.post(
-        "http://localhost:7770/uploads",
+        "https://startalign-3.onrender.com/uploads",
         formData,
         {
           headers: {
@@ -35,7 +35,7 @@ const FileUpload = () => {
       const fileName = selectedFile.name;
 
       await axios.post(
-        "http://localhost:7770/uploads",
+        "https://startalign-3.onrender.com/uploads",
         { fileUrl, fileName },
         {
           headers: {

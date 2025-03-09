@@ -5,7 +5,7 @@ const TeamContainer = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const url = "http://localhost:7770/users";
+  const url = "https://startalign-3.onrender.com/users";
 
   useEffect(() => {
     const fetchUsers = async () => {

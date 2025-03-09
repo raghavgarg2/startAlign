@@ -22,7 +22,7 @@ const CreateProject = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:7770/tasks", {
+      const response = await fetch("https://startalign-3.onrender.com/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
